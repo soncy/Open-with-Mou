@@ -1,7 +1,7 @@
 import re, os
 import sublime, sublime_plugin
 
-file_type_reg = re.compile('(.*?)\.(md|MD)$') #only support .md and .MD
+file_type_reg = re.compile('(.*?)\.(md|MD|markdown)$') #only support .md .MD .markdown
 
 class OpenWithMouCommand(sublime_plugin.TextCommand):
     def run(self, edit, paths = [None]):

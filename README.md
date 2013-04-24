@@ -1,6 +1,6 @@
 # Open markdown with Mou for Mac
 
-当打开的文件后缀是.md或者.MD时，使用Mou打开该文件
+当打开的文件后缀是.md，.MD，.markdown时，使用Mou打开该文件
 
 ## 安装
 可以通过下面两种方式安装  
