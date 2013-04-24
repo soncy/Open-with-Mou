@@ -3,7 +3,7 @@ import sublime, sublime_plugin
 
 file_type_reg = re.compile('(.*?)\.(md|MD)$') #only support .md and .MD
 
-class OpenWithMou(sublime_plugin.TextCommand):
+class OpenWithMouCommand(sublime_plugin.TextCommand):
     def run(self, edit, paths = [None]):
         for path in paths:
             self.open_file(self.view, path)
@@ -21,3 +21,6 @@ class OpenWithMou(sublime_plugin.TextCommand):
         if (ret is True):
             command = 'open -a Mou "' + file_name + '"'
             os.system(command)
+
+    def is_enabled(self):
+        return self.check_file_type(self.view.file_name())
