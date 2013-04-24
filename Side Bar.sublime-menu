@@ -1,0 +1,6 @@
+[
+    { "caption": "-" },
+    {
+        "caption": "Open with Mou", "command": "open_with_mou", "args": {"paths": []}
+    }
+]
