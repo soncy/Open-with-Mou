@@ -1,4 +1,4 @@
-# open with Mou for Mac
+# Open markdown with Mou for Mac
 
 当打开的文件后缀是.md或者.MD时，使用Mou打开该文件
 
