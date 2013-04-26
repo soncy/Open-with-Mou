@@ -12,7 +12,7 @@ class OpenWithMouCommand(sublime_plugin.TextCommand):
         try:
             file_type_reg.search(file_name).group(2)
             return True;
-        except Exception, e:
+        except Exception as e:
             return False
 
     def open_file(self, view, item = None):
